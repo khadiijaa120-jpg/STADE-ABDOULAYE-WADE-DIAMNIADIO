@@ -1,0 +1,16 @@
+body{
+    background-color: #4f002a;
+}
+
+h1,P{
+    color: white;
+    background-color: #ac6868;
+}
+p{
+   width:100%;
+}
+.paragraphe{
+    color: white;
+    background-color: #9fa334c9;
+    width: 50%;
+}
