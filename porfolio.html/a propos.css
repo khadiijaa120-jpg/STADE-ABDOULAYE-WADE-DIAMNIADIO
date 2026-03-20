@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:#CC0066;
+    color: white;
+}
+
+.logo,h1,h2{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a:hover{
+    color: #FFCCE6;
+}
+
+
+
+.apropos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 80px;
+    background: #ffe6F2;
+    animation:"slide" 1.5s ease;
+}
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.photo img{
+    width: 300px;
+    border-radius:10%;
+    box-shadow: 0 10px 30px rgba(0,0,0.3);
+}
+
+ .presentation{
+    max-width: 500px;
+ }
+
+
+.presentation h1{
+    margin-bottom: 20px;
+    color: #CC0066;
+}
+
+.presentation p{
+    margin-bottom: 20px;
+    line-height:1.6;
+}
+
+
+.skill{
+    margin-bottom: 20px;
+}
+
+
+.barre{
+    width: 100%;
+    height: 20px;
+    background: #FFD6E7;
+    border-radius: 10px;
+
+}
+
+.niveau{
+    height: 20px;
+    background:#FF4DA6;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.vs-code{
+    width:80%;
+}
+.html{
+    width: 79%;
+}
+.css{
+    width: 60%;
+}
+.flexbox{
+    width: 50%;
+}
+.responsive{
+    width: 40%;
+}
+.github{
+     width: 30%;
+}
+
+
+.academique {
+    margin-bottom: 30px;
+}
+.academique li{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+
+footer{
+background:#cc0066;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:0;
+}
+
+.reseaux{
+margin:10px 0;
+}
+
+.reseaux a{
+color:#ffcce6;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.reseaux a:hover{
+color:white;
+}
+
+
+.top{
+display:inline-block;
+margin-top:10px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.top:hover{
+text-decoration:underline;
+}

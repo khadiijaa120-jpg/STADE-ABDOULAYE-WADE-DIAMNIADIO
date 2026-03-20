@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <a href="inscription.html">Inscription</a>
+  <a href="tableau.html">Tableau des inscrits</a> 
+  <h1>Formulaire d'inscription</h1> 
+  <p>Inscrivez-vous sur notre plateforme afin d'obtenir les dernières tendances dans le<br> domaine du developpement web</p>
+  <form method="get" action="">
+
+ <fieldset>
+    <legend>Informations personnels</legend>
+   <label for="Prenom">Prénom</label> <br> <input type="text" name="Prenom" id="Prénom" autofocus size="60"><br>
+    <label for="Nom">Nom</label><br> <input type="text" name="Nom" size="60"><br>
+    <label for="Email">Email</label><br>  <input type="email" name="Email" size="60"><br>
+
+    <input type="radio" name="" id="homme" value="Homme">: <label for="Homme">Homme</label> <br>
+     <input type="radio" name="" id="femme" value="Femme">: <label for="Femme">Femme</label> <br>
+
+    <label for="Adresse">Adresse</label><br>
+        <input type="text" name="Adresse" size="60" ><br>
+
+    <label for="Photo de profil">Photo de profil</label> <br> <input type="file" name="Photo de profil"> <br>
+ </fieldset>
+ <fieldset id="top">
+    <legend>Coordonnées</legend>
+    <label for="Coordonnées">Numéro de téléphone</label><br>  <input type="number" name="Numerodetelephone"  placeholder="+221 800 00 00" size="60" ><br>
+    <P1>Ce numéro est-il sur Whatsapp ?</P1> <br>
+    <input type="radio" name="" id="Oui" value="Oui">: <label for="Oui">Oui</label> <br>
+     <input type="radio" name="" id="Non" value="Non">: <label for="Non">Non</label> <br>
+ </fieldset>
+  
+     <p><input type="submit" value="Envoyer"></p>
+     
+
+   
+  </form>
+</body>
+</html>

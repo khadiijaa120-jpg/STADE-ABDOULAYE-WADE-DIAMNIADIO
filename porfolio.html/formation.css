@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,h2,h3{
+    font-family: "Montaga", serif;
+}
+
+header{
+    background: linear-gradient(to right,#cc0066,#FF4DA6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:#CC0066;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+nav a:hover{
+    color: #FFCCE6;
+}
+
+
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.timeliner{
+    padding: 40px;
+    background-color:  #ffe6F2;;
+}
+
+.timeliner h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    margin-left: 60px;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    left:50;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #cc0066;
+}
+
+.etape{
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    opacity: 0;
+    animation: "apparition" 1s forwards;
+}
+
+.etape::before{
+    content: "";
+    position: absolute;
+    left:10px;
+    top: 5px;
+    width:16px;
+    height: 16px;
+    background: #FF4DA6;
+    border-radius:50%;
+}
+
+  .etape:nth-child(1){animation-delay:0.3s;}
+  .etape:nth-child(2){animation-delay:0.6s;}
+  .etape:nth-child(3){animation-delay:0.9s;}
+  .etape:nth-child(4){animation-delay:1.2s;}
+
+  @keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+
+
+.etape h3{
+    margin: 0;
+    font-size: 20px;
+    color: #cc0066;
+}
+.etape p{
+    margin: 5px 0;
+
+}
+
+.etape span{
+    font-weight:bold;
+    color: #444;
+}
+
+
+footer{
+background:#cc0066;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:0px;
+}
+
+.reseaux{
+margin:10px 0;
+}
+
+.reseaux a{
+color:#ffcce6;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.reseaux a:hover{
+color:white;
+}
+
+
+.top{
+display:inline-block;
+margin-top:10px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.top:hover{
+text-decoration:underline;
+}
+
+
+
+
+@media (max-width:768px){
+
+.container{
+margin-left:20px;
+padding-left:20px;
+}
+
+}

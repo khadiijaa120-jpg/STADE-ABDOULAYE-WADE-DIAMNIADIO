@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:#CC0066;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a:hover{
+    color: #FFCCE6;
+}
+
+.projets{
+    padding: 80px 60px;
+    background: #ffe6F2;
+
+}
+.projets h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.container-projets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.card{
+    background: white;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width: 100%;
+}
+.card h3{
+    padding: 15px;
+}
+
+.card P{
+    padding: 0 15px 15px;
+}
+
+.tech span{
+    background: #ff4DA6;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.card a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #cc0066;
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background: #ff4DA6;
+}
+
+
+
+footer{
+background:#cc0066;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:0px;
+}
+
+.reseaux{
+margin:10px 0;
+}
+
+.reseaux a{
+color:#ffcce6;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.reseaux a:hover{
+color:white;
+}
+
+
+.top{
+display:inline-block;
+margin-top:10px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.top:hover{
+text-decoration:underline;
+}
+
+
+
+
+@media (max-width:1023px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+}
+
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+.hero{
+flex-direction:column;
+}
+
+img{
+width:100%;
+height:auto;
+}
+
+}

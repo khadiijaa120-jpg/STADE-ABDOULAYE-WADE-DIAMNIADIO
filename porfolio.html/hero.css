@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero h2{
+    font-family: "Montaga", serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:#CC0066;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a:hover{
+    color: #FFCCE6;
+}
+
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    background:linear-gradient(135deg,#FF4DA6,#FFCCE6);
+    color: white;
+    min-height: 90vh;
+}
+
+.hero-text{
+    max-width: 500px;
+    animation: "apparition" 1.5s ease;
+}
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero-text h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Montaga"serif;
+}
+.hero-text p{
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.bouton{
+    display: inline-block;
+    padding: 12px 25px;
+    background: #CC0066;
+    color:white;
+    text-decoration: none;
+    border-radius:6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bouton:hover{
+    background: #ff4DA6;
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+
+
+
+.hero-image img{
+    width: 350px;
+    border-radius:50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: "zoom" 1.5s ease;
+}
+
+@keyframes zoom{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+footer{
+background:#cc0066;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:0px;
+}
+
+.reseaux{
+margin:10px 0;
+}
+
+.reseaux a{
+color:#ffcce6;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.reseaux a:hover{
+color:white;
+}
+
+
+.top{
+display:inline-block;
+margin-top:10px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.top:hover{
+text-decoration:underline;
+}
+
+
+
+
+@media (max-width:768px){
+.hero{
+text-align:center;
+flex-direction: column;
+}
+}
+
+img{
+width:100%;
+height:auto;
+}
+
